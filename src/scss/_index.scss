@@ -1,0 +1,164 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0,157,196);
+    .input-holder{
+        width: 60%;
+        height: 24%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        .info-text{
+            width: 100%;
+            height: 100px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        .input-and-button{
+            width: 90%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            #text-input{
+                width: 70%;
+                height: 45%;
+                padding: 10px;
+                font-size: 16px;
+                color: black;
+                outline: none;
+                border: 1px solid #ececec;
+            }
+            #create-btn{
+                font-size: 16px;
+                font-weight: 500;
+                height: 45%;
+                width: 10%;
+                letter-spacing: 2px;
+                &:hover{
+                    background-color: rgb(254, 77, 77);
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    .div-for-process{
+        width: 100%;
+        height: 63%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .div-open{
+            width: 31%;
+            height: 90%;
+            background-color: #ececec;
+            border: 2px solid #fcc;
+            padding: 10px;
+                div{
+                    width: 100%;
+                    height: 30px;
+                    font-size: 16px;
+                    line-height: 30px;
+                    padding: 0 10px;
+                    background-color: #e91e63;
+                    color: #fff;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                }
+        }
+        .div-in-progress{
+            width: 31%;
+            height: 90%;
+            background-color: #ececec;
+            border: 2px solid #fcc;
+            padding: 10px;
+            div{
+                width: 100%;
+                height: 30px;
+                font-size: 16px;
+                line-height: 30px;
+                padding: 0 10px;
+                background-color: #e7facc;
+                color: rgb(255, 0, 0);
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+        }
+        .div-compleated{
+            width: 31%;
+            height: 90%;
+            background-color: #ececec;
+            border: 2px solid #fcc;
+            padding: 10px;
+            div{
+                width: 100%;
+                height: 30px;
+                font-size: 16px;
+                line-height: 30px;
+                padding: 0 10px;
+                background-color: #0800ff;
+                color: #fff;
+                margin-bottom: 5px;
+                text-decoration: line-through;
+                cursor: pointer;
+            }
+        }
+    }
+    .status-holder{
+        width: 100%;
+        height: 13%;
+        display: flex;
+        align-items: center;
+        padding: 0 75px;
+        justify-content: space-between;
+        .open-status{
+            width: 21%;
+            height: 60%;
+            background-color: #ffca1a;
+            border: 2px solid #fcc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+        .in-progress-status{
+            width: 21%;
+            height: 60%;
+            background-color: #8aed2e;
+            border: 2px solid #fcc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+        .compleated-status{
+            width: 21%;
+            height: 60%;
+            background-color: #f34949;
+            border: 2px solid #fcc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

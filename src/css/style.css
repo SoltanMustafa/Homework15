@@ -1,0 +1,588 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgb(0, 157, 196);
+}
+.container .input-holder {
+  width: 60%;
+  height: 24%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.container .input-holder .info-text {
+  width: 100%;
+  height: 100px;
+  background-color: aliceblue;
+  text-align: center;
+}
+.container .input-holder .input-and-button {
+  width: 90%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.container .input-holder .input-and-button #text-input {
+  width: 70%;
+  height: 45%;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  border: 1px solid #ececec;
+}
+.container .input-holder .input-and-button #create-btn {
+  font-size: 16px;
+  font-weight: 500;
+  height: 45%;
+  width: 10%;
+  letter-spacing: 2px;
+}
+.container .input-holder .input-and-button #create-btn:hover {
+  background-color: rgb(254, 77, 77);
+  color: #fff;
+}
+.container .div-for-process {
+  width: 100%;
+  height: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .div-for-process .div-open {
+  width: 31%;
+  height: 90%;
+  background-color: #ececec;
+  border: 2px solid #fcc;
+  padding: 10px;
+}
+.container .div-for-process .div-open div {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 10px;
+  background-color: #e91e63;
+  color: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.container .div-for-process .div-in-progress {
+  width: 31%;
+  height: 90%;
+  background-color: #ececec;
+  border: 2px solid #fcc;
+  padding: 10px;
+}
+.container .div-for-process .div-in-progress div {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 10px;
+  background-color: #e7facc;
+  color: rgb(255, 0, 0);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.container .div-for-process .div-compleated {
+  width: 31%;
+  height: 90%;
+  background-color: #ececec;
+  border: 2px solid #fcc;
+  padding: 10px;
+}
+.container .div-for-process .div-compleated div {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 10px;
+  background-color: #0800ff;
+  color: #fff;
+  margin-bottom: 5px;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.container .status-holder {
+  width: 100%;
+  height: 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .status-holder .open-status {
+  width: 21%;
+  height: 60%;
+  background-color: #ffca1a;
+  border: 2px solid #fcc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .status-holder .open-status p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.container .status-holder .in-progress-status {
+  width: 21%;
+  height: 60%;
+  background-color: #8aed2e;
+  border: 2px solid #fcc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .status-holder .in-progress-status p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.container .status-holder .compleated-status {
+  width: 21%;
+  height: 60%;
+  background-color: #f34949;
+  border: 2px solid #fcc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .status-holder .compleated-status p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container-custom {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0;
+}
+.container-custom .about-site {
+  width: 100%;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container-custom .about-site .text-holder {
+  width: 100%;
+  height: 80px;
+}
+.container-custom .about-site .text-holder .header-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: rgb(255, 111, 0);
+}
+.container-custom .about-site .text-holder .header-text2 {
+  display: inline-block;
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(24, 1, 28);
+}
+.container-custom .about-site .meals-menu {
+  width: 100%;
+  height: 240px;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  background-color: aqua;
+}
+.container-custom .about-site .meals-menu .meal-photo-name {
+  width: 7%;
+  height: 105px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #faf9f9;
+}
+.container-custom .about-site .meals-menu .meal-photo-name .meal-photo {
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+}
+.container-custom .about-site .meals-menu .meal-photo-name .meal-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-custom .about-site .meals-menu .meal-photo-name .meal-name {
+  width: 100%;
+  height: 20%;
+  padding: 0 5px;
+}
+.container-custom .about-site .meals-menu .meal-photo-name .meal-name .meal-name-holder {
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  color: rgb(0, 78, 8);
+}
+.container-custom .search-area {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.container-custom .search-area #meal-input {
+  width: 35%;
+  height: 37px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  border: 2px solid rgb(210, 163, 163);
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.container-custom .search-area #meal-input:focus {
+  background-color: rgb(255, 250, 250);
+  color: rgb(15, 21, 26);
+  border-color: rgb(177, 233, 250);
+  -webkit-box-shadow: 0 2px 2px rgb(140, 222, 247);
+          box-shadow: 0 2px 2px rgb(140, 222, 247);
+}
+.container-custom .search-area #search-button {
+  height: 37px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: gold;
+  letter-spacing: 1px;
+}
+.container-custom .content-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.container-custom .content-area .greating-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 52px;
+  letter-spacing: 3px;
+  color: rgb(244, 111, 10);
+}
+.container-custom .content-area .recepy-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 20px 50px;
+}
+.container-custom .content-area .recepy-container .food-category {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: rgb(171, 1, 160);
+}
+.container-custom .content-area .recepy-container .food-area {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: rgb(1, 120, 171);
+}
+.container-custom .content-area .recepy-container .food-name {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: rgb(244, 150, 28);
+}
+.container-custom .content-area .recepy-container .meal-itself {
+  width: 100%;
+  height: 475px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.container-custom .content-area .recepy-container .meal-itself .img-div {
+  width: 32%;
+  height: 100%;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container-custom .content-area .recepy-container .meal-itself .img-div:hover .icon-holder {
+  width: 70px;
+  height: 60px;
+  right: 30px;
+  bottom: 30px;
+}
+.container-custom .content-area .recepy-container .meal-itself .img-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-custom .content-area .recepy-container .meal-itself .img-div .icon-holder {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container-custom .content-area .recepy-container .meal-itself .img-div .icon-holder a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container-custom .content-area .recepy-container .meal-itself .img-div .icon-holder a svg {
+  width: 100%;
+  height: 100%;
+}
+.container-custom .content-area .recepy-container .meal-itself .ingridients {
+  width: 32%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 25px;
+}
+.container-custom .content-area .recepy-container .meal-itself .ingridients .ing-title {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 20px;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: black;
+}
+.container-custom .content-area .recepy-container .meal-itself .ingridients .ingridients-list {
+  width: 100%;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.container-custom .content-area .recepy-container .meal-itself .ingridients .ingridients-list li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 20px);
+          flex: 0 1 calc(50% - 20px);
+  padding: 5px 5px;
+  font-size: 16px;
+}
+.container-custom .content-area .recepy-container .meal-itself .measurements {
+  width: 32%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 25px;
+}
+.container-custom .content-area .recepy-container .meal-itself .measurements .msr-title {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 20px;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: black;
+}
+.container-custom .content-area .recepy-container .meal-itself .measurements .measurements-list {
+  width: 100%;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.container-custom .content-area .recepy-container .meal-itself .measurements .measurements-list li {
+  padding: 5px 5px;
+  font-size: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 20px);
+          flex: 0 1 calc(50% - 20px);
+}
+.container-custom .content-area .recepy-container .instruction-p {
+  width: 100%;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 16px;
+}
+.container-custom .content-area .recepy-container .instruction-p span {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
